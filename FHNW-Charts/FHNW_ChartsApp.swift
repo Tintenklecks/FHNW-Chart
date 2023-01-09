@@ -11,7 +11,7 @@ import SwiftUI
 struct FHNW_ChartsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChartView()
         }
     }
 }

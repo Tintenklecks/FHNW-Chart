@@ -8,19 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		AA08152E296C62B3003D9161 /* FHNW_ChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */; };
-		AA081530296C62B3003D9161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08152F296C62B3003D9161 /* ContentView.swift */; };
+		AA081530296C62B3003D9161 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08152F296C62B3003D9161 /* ChartView.swift */; };
 		AA081532296C62B6003D9161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA081531296C62B6003D9161 /* Assets.xcassets */; };
 		AA081535296C62B6003D9161 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA081534296C62B6003D9161 /* Preview Assets.xcassets */; };
 		AA081542296C6555003D9161 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081541296C6555003D9161 /* secrets.swift */; };
+		AA081548296C6E8D003D9161 /* OWM.API.Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081545296C6E8C003D9161 /* OWM.API.Endpoints.swift */; };
+		AA081549296C6E8D003D9161 /* OWM.DataStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081546296C6E8D003D9161 /* OWM.DataStructures.swift */; };
+		AA08154A296C6E8D003D9161 /* OWM.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081547296C6E8D003D9161 /* OWM.Service.swift */; };
+		AA08154D296C75DE003D9161 /* Network.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08154B296C75DD003D9161 /* Network.Error.swift */; };
+		AA08154E296C75DE003D9161 /* Network.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08154C296C75DE003D9161 /* Network.Service.swift */; };
+		AA081552296C76C8003D9161 /* ChartView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */; };
+		AA081554296C76E4003D9161 /* ChartView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081553296C76E4003D9161 /* ChartView.Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA08152A296C62B3003D9161 /* FHNW-Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FHNW-Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHNW_ChartsApp.swift; sourceTree = "<group>"; };
-		AA08152F296C62B3003D9161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA08152F296C62B3003D9161 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		AA081531296C62B6003D9161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA081534296C62B6003D9161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA081541296C6555003D9161 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
+		AA081545296C6E8C003D9161 /* OWM.API.Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWM.API.Endpoints.swift; sourceTree = "<group>"; };
+		AA081546296C6E8D003D9161 /* OWM.DataStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWM.DataStructures.swift; sourceTree = "<group>"; };
+		AA081547296C6E8D003D9161 /* OWM.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWM.Service.swift; sourceTree = "<group>"; };
+		AA08154B296C75DD003D9161 /* Network.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.Error.swift; sourceTree = "<group>"; };
+		AA08154C296C75DE003D9161 /* Network.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.Service.swift; sourceTree = "<group>"; };
+		AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.ViewModel.swift; sourceTree = "<group>"; };
+		AA081553296C76E4003D9161 /* ChartView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */,
-				AA08152F296C62B3003D9161 /* ContentView.swift */,
+				AA08152F296C62B3003D9161 /* ChartView.swift */,
+				AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */,
+				AA081553296C76E4003D9161 /* ChartView.Model.swift */,
+				AA08154F296C75E8003D9161 /* OWM API */,
+				AA081550296C75F5003D9161 /* Network Layer */,
 				AA081541296C6555003D9161 /* secrets.swift */,
 				AA081531296C62B6003D9161 /* Assets.xcassets */,
 				AA081533296C62B6003D9161 /* Preview Content */,
@@ -68,6 +86,25 @@
 				AA081534296C62B6003D9161 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA08154F296C75E8003D9161 /* OWM API */ = {
+			isa = PBXGroup;
+			children = (
+				AA081545296C6E8C003D9161 /* OWM.API.Endpoints.swift */,
+				AA081546296C6E8D003D9161 /* OWM.DataStructures.swift */,
+				AA081547296C6E8D003D9161 /* OWM.Service.swift */,
+			);
+			path = "OWM API";
+			sourceTree = "<group>";
+		};
+		AA081550296C75F5003D9161 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				AA08154C296C75DE003D9161 /* Network.Service.swift */,
+				AA08154B296C75DD003D9161 /* Network.Error.swift */,
+			);
+			path = "Network Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA081530296C62B3003D9161 /* ContentView.swift in Sources */,
+				AA081552296C76C8003D9161 /* ChartView.ViewModel.swift in Sources */,
+				AA081530296C62B3003D9161 /* ChartView.swift in Sources */,
+				AA081554296C76E4003D9161 /* ChartView.Model.swift in Sources */,
+				AA08154E296C75DE003D9161 /* Network.Service.swift in Sources */,
+				AA08154A296C6E8D003D9161 /* OWM.Service.swift in Sources */,
 				AA08152E296C62B3003D9161 /* FHNW_ChartsApp.swift in Sources */,
+				AA081549296C6E8D003D9161 /* OWM.DataStructures.swift in Sources */,
+				AA08154D296C75DE003D9161 /* Network.Error.swift in Sources */,
 				AA081542296C6555003D9161 /* secrets.swift in Sources */,
+				AA081548296C6E8D003D9161 /* OWM.API.Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
