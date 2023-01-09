@@ -11,7 +11,7 @@
 		AA081530296C62B3003D9161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08152F296C62B3003D9161 /* ContentView.swift */; };
 		AA081532296C62B6003D9161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA081531296C62B6003D9161 /* Assets.xcassets */; };
 		AA081535296C62B6003D9161 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA081534296C62B6003D9161 /* Preview Assets.xcassets */; };
-		AA081540296C6487003D9161 /* secrez.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08153F296C6487003D9161 /* secrez.swift */; };
+		AA081542296C6555003D9161 /* secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081541296C6555003D9161 /* secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		AA08152F296C62B3003D9161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA081531296C62B6003D9161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA081534296C62B6003D9161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AA08153F296C6487003D9161 /* secrez.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secrez.swift; sourceTree = "<group>"; };
+		AA081541296C6555003D9161 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */,
 				AA08152F296C62B3003D9161 /* ContentView.swift */,
-				AA08153F296C6487003D9161 /* secrez.swift */,
+				AA081541296C6555003D9161 /* secrets.swift */,
 				AA081531296C62B6003D9161 /* Assets.xcassets */,
 				AA081533296C62B6003D9161 /* Preview Content */,
 			);
@@ -142,7 +142,7 @@
 			files = (
 				AA081530296C62B3003D9161 /* ContentView.swift in Sources */,
 				AA08152E296C62B3003D9161 /* FHNW_ChartsApp.swift in Sources */,
-				AA081540296C6487003D9161 /* secrez.swift in Sources */,
+				AA081542296C6555003D9161 /* secrets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
