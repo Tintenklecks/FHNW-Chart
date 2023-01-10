@@ -18,7 +18,7 @@ extension ChartView {
 
     class Model: ObservableObject {
         func fetch(lat: Double, lon: Double) async throws -> OWMForecast {
-            let forecast = try await OWMService.generateImage(lat: lat, lon: lon)
+            let forecast = try await OWMService.getForecast(lat: lat, lon: lon)
             return forecast
         }
     }
