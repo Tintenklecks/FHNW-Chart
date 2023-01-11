@@ -19,16 +19,15 @@
 		AA08154E296C75DE003D9161 /* Network.Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08154C296C75DE003D9161 /* Network.Service.swift */; };
 		AA081552296C76C8003D9161 /* ChartView.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */; };
 		AA081554296C76E4003D9161 /* ChartView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA081553296C76E4003D9161 /* ChartView.Model.swift */; };
-		AA08155C296CB0DE003D9161 /* Ingo_s_Charts_PlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08155B296CB0DE003D9161 /* Ingo_s_Charts_PlaygroundApp.swift */; };
-		AA08155E296CB0DE003D9161 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA08155D296CB0DE003D9161 /* ContentView.swift */; };
-		AA081560296CB0E2003D9161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA08155F296CB0E2003D9161 /* Assets.xcassets */; };
-		AA081563296CB0E2003D9161 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA081562296CB0E2003D9161 /* Preview Assets.xcassets */; };
+		AAD52425296EE4DD00488013 /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = AAD52424296EE4DD00488013 /* forecast.json */; };
+		AAD52428296EF23200488013 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD52427296EF23200488013 /* SwiftUIView.swift */; };
+		AAD5242A296F053F00488013 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD52429296F053F00488013 /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA08152A296C62B3003D9161 /* FHNW-Charts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FHNW-Charts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FHNW_ChartsApp.swift; sourceTree = "<group>"; };
-		AA08152F296C62B3003D9161 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		AA08152F296C62B3003D9161 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChartView.swift; path = "FHNW-Charts/ChartView.swift"; sourceTree = SOURCE_ROOT; };
 		AA081531296C62B6003D9161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA081534296C62B6003D9161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA081541296C6555003D9161 /* secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secrets.swift; sourceTree = "<group>"; };
@@ -39,22 +38,13 @@
 		AA08154C296C75DE003D9161 /* Network.Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.Service.swift; sourceTree = "<group>"; };
 		AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.ViewModel.swift; sourceTree = "<group>"; };
 		AA081553296C76E4003D9161 /* ChartView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.Model.swift; sourceTree = "<group>"; };
-		AA081559296CB0DE003D9161 /* Ingo's Charts Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ingo's Charts Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA08155B296CB0DE003D9161 /* Ingo_s_Charts_PlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingo_s_Charts_PlaygroundApp.swift; sourceTree = "<group>"; };
-		AA08155D296CB0DE003D9161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AA08155F296CB0E2003D9161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA081562296CB0E2003D9161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAD52424296EE4DD00488013 /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
+		AAD52427296EF23200488013 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		AAD52429296F053F00488013 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA081527296C62B3003D9161 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA081556296CB0DE003D9161 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				AA08152C296C62B3003D9161 /* FHNW-Charts */,
-				AA08155A296CB0DE003D9161 /* Ingo's Charts Playground */,
 				AA08152B296C62B3003D9161 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				AA08152A296C62B3003D9161 /* FHNW-Charts.app */,
-				AA081559296CB0DE003D9161 /* Ingo's Charts Playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AA08152D296C62B3003D9161 /* FHNW_ChartsApp.swift */,
+				AAD52429296F053F00488013 /* AppState.swift */,
 				AA08152F296C62B3003D9161 /* ChartView.swift */,
 				AA081551296C76C8003D9161 /* ChartView.ViewModel.swift */,
 				AA081553296C76E4003D9161 /* ChartView.Model.swift */,
@@ -94,6 +83,7 @@
 				AA081541296C6555003D9161 /* secrets.swift */,
 				AA081531296C62B6003D9161 /* Assets.xcassets */,
 				AA081533296C62B6003D9161 /* Preview Content */,
+				AAD52427296EF23200488013 /* SwiftUIView.swift */,
 			);
 			path = "FHNW-Charts";
 			sourceTree = "<group>";
@@ -112,6 +102,7 @@
 				AA081545296C6E8C003D9161 /* OWM.API.Endpoints.swift */,
 				AA081546296C6E8D003D9161 /* OWM.DataStructures.swift */,
 				AA081547296C6E8D003D9161 /* OWM.Service.swift */,
+				AAD52426296EE4E300488013 /* Mock Data */,
 			);
 			path = "OWM API";
 			sourceTree = "<group>";
@@ -125,23 +116,12 @@
 			path = "Network Layer";
 			sourceTree = "<group>";
 		};
-		AA08155A296CB0DE003D9161 /* Ingo's Charts Playground */ = {
+		AAD52426296EE4E300488013 /* Mock Data */ = {
 			isa = PBXGroup;
 			children = (
-				AA08155B296CB0DE003D9161 /* Ingo_s_Charts_PlaygroundApp.swift */,
-				AA08155D296CB0DE003D9161 /* ContentView.swift */,
-				AA08155F296CB0E2003D9161 /* Assets.xcassets */,
-				AA081561296CB0E2003D9161 /* Preview Content */,
+				AAD52424296EE4DD00488013 /* forecast.json */,
 			);
-			path = "Ingo's Charts Playground";
-			sourceTree = "<group>";
-		};
-		AA081561296CB0E2003D9161 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AA081562296CB0E2003D9161 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = "Mock Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,23 +144,6 @@
 			productReference = AA08152A296C62B3003D9161 /* FHNW-Charts.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA081558296CB0DE003D9161 /* Ingo's Charts Playground */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA081564296CB0E2003D9161 /* Build configuration list for PBXNativeTarget "Ingo's Charts Playground" */;
-			buildPhases = (
-				AA081555296CB0DE003D9161 /* Sources */,
-				AA081556296CB0DE003D9161 /* Frameworks */,
-				AA081557296CB0DE003D9161 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ingo's Charts Playground";
-			productName = "Ingo's Charts Playground";
-			productReference = AA081559296CB0DE003D9161 /* Ingo's Charts Playground.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,9 +155,6 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					AA081529296C62B3003D9161 = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					AA081558296CB0DE003D9161 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -213,7 +173,6 @@
 			projectRoot = "";
 			targets = (
 				AA081529296C62B3003D9161 /* FHNW-Charts */,
-				AA081558296CB0DE003D9161 /* Ingo's Charts Playground */,
 			);
 		};
 /* End PBXProject section */
@@ -225,15 +184,7 @@
 			files = (
 				AA081535296C62B6003D9161 /* Preview Assets.xcassets in Resources */,
 				AA081532296C62B6003D9161 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA081557296CB0DE003D9161 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA081563296CB0E2003D9161 /* Preview Assets.xcassets in Resources */,
-				AA081560296CB0E2003D9161 /* Assets.xcassets in Resources */,
+				AAD52425296EE4DD00488013 /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +197,8 @@
 			files = (
 				AA081552296C76C8003D9161 /* ChartView.ViewModel.swift in Sources */,
 				AA081530296C62B3003D9161 /* ChartView.swift in Sources */,
+				AAD52428296EF23200488013 /* SwiftUIView.swift in Sources */,
+				AAD5242A296F053F00488013 /* AppState.swift in Sources */,
 				AA081554296C76E4003D9161 /* ChartView.Model.swift in Sources */,
 				AA08154E296C75DE003D9161 /* Network.Service.swift in Sources */,
 				AA08154A296C6E8D003D9161 /* OWM.Service.swift in Sources */,
@@ -254,15 +207,6 @@
 				AA08154D296C75DE003D9161 /* Network.Error.swift in Sources */,
 				AA081542296C6555003D9161 /* secrets.swift in Sources */,
 				AA081548296C6E8D003D9161 /* OWM.API.Endpoints.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA081555296CB0DE003D9161 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA08155E296CB0DE003D9161 /* ContentView.swift in Sources */,
-				AA08155C296CB0DE003D9161 /* Ingo_s_Charts_PlaygroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,64 +385,6 @@
 			};
 			name = Release;
 		};
-		AA081565296CB0E2003D9161 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ingo's Charts Playground/Preview Content\"";
-				DEVELOPMENT_TEAM = KT43342F9W;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.Ingo-s-Charts-Playground";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AA081566296CB0E2003D9161 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ingo's Charts Playground/Preview Content\"";
-				DEVELOPMENT_TEAM = KT43342F9W;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "de.IBMobile.Ingo-s-Charts-Playground";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,15 +402,6 @@
 			buildConfigurations = (
 				AA081539296C62B6003D9161 /* Debug */,
 				AA08153A296C62B6003D9161 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA081564296CB0E2003D9161 /* Build configuration list for PBXNativeTarget "Ingo's Charts Playground" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA081565296CB0E2003D9161 /* Debug */,
-				AA081566296CB0E2003D9161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

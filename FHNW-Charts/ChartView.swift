@@ -1,5 +1,4 @@
 //
-//  ContentView.swift
 //  FHNW-Charts
 //
 //  Created by Ingo Boehme on 09.01.23.
@@ -10,6 +9,8 @@ import SwiftUI
 // MARK: - ChartView
 
 struct ChartView: View {
+    @EnvironmentObject var appState: AppState
+
     @StateObject var viewModel = ViewModel()
 
     @State private var latitudeDegree: Int = 47
@@ -17,70 +18,90 @@ struct ChartView: View {
     @State private var longitudeDegree: Int = 8
     @State private var longitudeFragment: Int = 21
 
+    
     var body: some View {
         VStack {
-            HStack {
-                Text(viewModel.city).font(.title)
-                Spacer()
-                Button {
-                    reload()
-                } label: {
-                    Image(systemName: "arrow.clockwise")
-                }
-                .padding()
-                .background(Color(red: 0.53, green: 0.73, blue: 1.0))
-                .clipShape(Circle())
-                .shadow(radius: 3, x: 2, y: 1)
+            VStack {
+                locationHeader
+                Divider()
+                locastionSelection
 
-            }
-            Divider()
+                Divider()
 
-            HStack {
-                VStack {
-                    Text("Latitude")
-                    HStack(spacing: 0) {
-                        SelectionView(selectedValue: $latitudeDegree, start: -89, end: 89, unitPositive: "°N", unitNegative: "°S")
-                        SelectionView(selectedValue: $latitudeFragment, start: 0, end: 99)
-                    }
-                }
-                Spacer()
-                VStack {
-                    Text("Longitude")
-                    HStack(spacing: 0) {
-                        SelectionView(selectedValue: $longitudeDegree, start: -179, end: 179, unitPositive: "°E", unitNegative: "°W")
-                        SelectionView(selectedValue: $longitudeFragment, start: 0, end: 99)
-                    }
-                }
-            }
-
-            Divider()
-
-            ScrollView {
-                LazyVStack {
-                    ForEach(viewModel.temperature) { temperature in
-                        HStack {
-                            Text(temperature.date.formatted())
-                            Spacer()
-                            Text(temperature.temperature.formatted())
+                ScrollView {
+                    LazyVStack {
+                        ForEach(viewModel.temperature) { temperature in
+                            HStack {
+                                Text(temperature.date.formatted())
+                                Spacer()
+                                Text(temperature.temperature.formatted())
+                            }
                         }
                     }
                 }
             }
+            .padding()
+
+            if let error = viewModel.errorText {
+                VStack {
+                    Color.clear.frame(height: 0)
+                    Text(error)
+                        .foregroundColor(.white)
+                }
+                .background(Color.red)
+            }
         }
-        .padding()
         .onAppear {
-            viewModel.reload(latitudeDegree: latitudeDegree, latitudeFragment: latitudeFragment, longitudeDegree: longitudeDegree, longitudeFragment: longitudeFragment)
+            viewModel.service = appState.service
+            reload()
         }
     }
-    
+
+    var locastionSelection: some View {
+        HStack {
+            VStack {
+                Text("Latitude")
+                HStack(spacing: 0) {
+                    SelectionView(selectedValue: $latitudeDegree, start: -89, end: 89, unitPositive: "°N", unitNegative: "°S")
+                    SelectionView(selectedValue: $latitudeFragment, start: 0, end: 99)
+                }
+            }
+            Spacer()
+            VStack {
+                Text("Longitude")
+                HStack(spacing: 0) {
+                    SelectionView(selectedValue: $longitudeDegree, start: -179, end: 179, unitPositive: "°E", unitNegative: "°W")
+                    SelectionView(selectedValue: $longitudeFragment, start: 0, end: 99)
+                }
+            }
+        }
+    }
+
+    var locationHeader: some View {
+        HStack {
+            Text(viewModel.city).font(.title)
+            Spacer()
+            Button {
+                reload()
+            } label: {
+                Image(systemName: "arrow.clockwise")
+            }
+            .padding()
+            .background(Color(red: 0.53, green: 0.73, blue: 1.0))
+            .clipShape(Circle())
+            .shadow(radius: 3, x: 2, y: 1)
+        }
+    }
+
     func reload() {
         viewModel.reload(latitudeDegree: latitudeDegree, latitudeFragment: latitudeFragment, longitudeDegree: longitudeDegree, longitudeFragment: longitudeFragment)
     }
 }
 
-// MARK: - ContentView_Previews
+// MARK: - ChartView_Previews
 
-struct ContentView_Previews: PreviewProvider {
+struct ChartView_Previews: PreviewProvider {
+    static var appState = AppState()
     static var previews: some View {
         ChartView()
     }

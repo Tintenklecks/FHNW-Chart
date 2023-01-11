@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FHNW_ChartsApp: App {
+    let appState = AppState()
+
     var body: some Scene {
         WindowGroup {
             ChartView()
+                .environmentObject(appState)
         }
     }
 }
